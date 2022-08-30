@@ -159,7 +159,7 @@
                 <artifactId>aliyun-java-vod-upload</artifactId>
                 <version>${aliyun-java-vod-upload.version}</version>
                 <scope>system</scope>
-                <systemPath>F:/guli_repository/repository/com/aliyun/aliyun-java-vod-upload/1.4.11/aliyun-java-vod-upload-1.4.11.jar</systemPath>
+                <systemPath>F:/guli_repostiory/repository/com/aliyun/aliyun-java-vod-upload/1.4.11/aliyun-java-vod-upload-1.4.11.jar</systemPath>
             </dependency>
             <dependency>
                 <groupId>com.aliyun</groupId>
