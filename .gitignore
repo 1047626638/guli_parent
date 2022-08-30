@@ -34,10 +34,6 @@ out
 gen
 .mvn/
 lib/
-service/service_edu/target/classes/generated/
-service/service_edu/target/generated-sources/
-service/service_edu/target/generated-test-sources/
-service/service_edu/target/test-classes/generated_tests/
 !/.gitignore
 
 .gitignore
