@@ -34,7 +34,7 @@ public class Result {
     //失败静态方法
     public static Result error(){
         Result result = new Result();
-        result.setSuccessed(true);
+        result.setSuccessed(false);
         result.setCode(ResultCode.ERROR);
         result.setMessage("失败");
         return result;
