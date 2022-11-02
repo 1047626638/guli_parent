@@ -9,6 +9,10 @@ import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 /**
  * @author
  * @since 2018/12/13
@@ -72,4 +76,6 @@ public class CodeGenerator {
         // 6、执行
         mpg.execute();
     }
+
+
 }

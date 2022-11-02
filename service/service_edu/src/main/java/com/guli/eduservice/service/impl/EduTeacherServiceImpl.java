@@ -46,6 +46,8 @@ public class EduTeacherServiceImpl extends ServiceImpl<EduTeacherMapper, EduTeac
         if(!StringUtils.isEmpty(end)){
             queryWrapper.le("gmt_create",end);
         }
+        //排序    
+        queryWrapper.orderByDesc("gmt_create");
         eduTeacherService.page(teacherPage,queryWrapper);
     }
 }
