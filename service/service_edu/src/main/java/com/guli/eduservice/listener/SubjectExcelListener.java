@@ -33,12 +33,13 @@ public class SubjectExcelListener extends AnalysisEventListener<SubjectData> {
             existOneSubject.setParentId("0");
             eduSubjectService.save(existOneSubject);
        }
+        String pid = existOneSubject.getId();
         //判断二级分类是否重复
-        EduSubject existTwoSubject = this.existTwoSubject(eduSubjectService,subjectData.getOneSubjectName(),subjectData.getTwoSubjectName());
+        EduSubject existTwoSubject = this.existTwoSubject(eduSubjectService,subjectData.getTwoSubjectName(),pid);
         if(existTwoSubject == null){
             existTwoSubject = new EduSubject();
             existTwoSubject.setTitle(subjectData.getTwoSubjectName());
-            existTwoSubject.setParentId(existOneSubject.getId());
+            existTwoSubject.setParentId(pid);
             eduSubjectService.save(existTwoSubject);
         }
     }
