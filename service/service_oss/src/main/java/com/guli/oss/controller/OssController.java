@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+@Api(tags = "文件上传到阿里云OSS")
 @RestController
 @RequestMapping("/eduoss/fileoss")
-@Api("文件上传到阿里云OSS")
 @CrossOrigin //解决跨域
 public class OssController {
     @Autowired

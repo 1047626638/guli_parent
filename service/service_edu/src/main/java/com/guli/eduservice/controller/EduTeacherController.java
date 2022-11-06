@@ -28,7 +28,7 @@ import java.util.List;
  * @author lipeng
  * @since 2022-08-29
  */
-@Api("讲师管理")
+@Api(tags = {"讲师管理"})
 @RestController
 @RequestMapping("/eduservice/edu-teacher")
 @CrossOrigin //解决跨域

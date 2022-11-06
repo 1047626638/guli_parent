@@ -5,7 +5,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
-@Api("登录")
+@Api(tags = {"登录"})
 @RestController
 @RequestMapping("/eduservice/user")
 @CrossOrigin //解决跨域
