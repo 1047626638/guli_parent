@@ -1,10 +1,6 @@
 spring:
   profiles:
     active: dev
-  application:
-    name: service-edu
-  # nacos服务地址spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
+
+
+

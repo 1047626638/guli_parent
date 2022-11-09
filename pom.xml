@@ -8,6 +8,7 @@
         <module>common</module>
         <module>service/service_oss</module>
         <module>service/service_vod</module>
+        <module>infrastructure</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

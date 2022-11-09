@@ -14,7 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Api(tags = "文件上传到阿里云OSS")
 @RestController
 @RequestMapping("/eduoss/fileoss")
-@CrossOrigin //解决跨域
+//@CrossOrigin //解决跨域
 public class OssController {
     @Autowired
     private OssService ossService;

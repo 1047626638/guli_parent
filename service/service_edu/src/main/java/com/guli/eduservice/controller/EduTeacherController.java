@@ -15,6 +15,7 @@ import io.swagger.annotations.ApiParam;
 import io.swagger.models.auth.In;
 import lombok.val;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,7 +32,7 @@ import java.util.List;
 @Api(tags = {"讲师管理"})
 @RestController
 @RequestMapping("/eduservice/edu-teacher")
-@CrossOrigin //解决跨域
+//@CrossOrigin //解决跨域
 public class EduTeacherController {
     @Autowired
     private EduTeacherService eduTeacherService;
@@ -84,6 +85,7 @@ public class EduTeacherController {
     }
 
     @ApiOperation(value = "分页条件查询")
+    @Cacheable(value = "teacherList",key = "'selectTeacherList'")
     @PostMapping("pageTeacherConditon/{current}/{limit}")
     public Result pageTeacherCondition(@ApiParam(name = "current",value = "当前页",required = true)
                                        @PathVariable long current,
