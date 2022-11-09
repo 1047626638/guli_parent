@@ -3,6 +3,25 @@ server:
 spring:
   application:
     name: service-edu
+# nacos服务地址spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: ccb
+    database: 0
+    timeout: 1800000
+    lettuce:
+      pool:
+        max-active: 20
+        max-wait: -1
+        #最大阻塞等待时间(负数表示没限制)
+        max-idle: 5
+        min-idle: 0
   #数据源
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -25,5 +44,6 @@ mybatis-plus:
     db-config:
       logic-delete-value: 1
       logic-not-delete-value: 0
+
 
 
