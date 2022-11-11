@@ -1,0 +1,18 @@
+#服务端口
+server:
+  port: 8002
+  #服务名
+spring:
+  application:
+    name: service-oss
+
+#阿里云 OSS
+#不同的服务器，地址不同
+aliyun:
+  oss:
+    file:
+      endpoint: oss-cn-beijing.aliyuncs.com
+      keyid: LTAI5tLhR2Q3eoMW9zK4WijX
+      keysecret: MzAGeETeZPJnx05sCYe7uewztjKKl9
+      #bucket可以在控制台创建，也可以使用java代码创建
+      bucketname: guli-parent-1102
